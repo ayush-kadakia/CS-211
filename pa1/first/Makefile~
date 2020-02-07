@@ -1,0 +1,7 @@
+all: swap
+
+search: swap.c
+	gcc -Wall -Werror -fsanitize=address -std=11 swap.c -o swap
+
+clean:
+	rm -f swap

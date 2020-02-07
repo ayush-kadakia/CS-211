@@ -1,0 +1,8 @@
+all: eigth
+
+search: eigth.c
+	gcc -Wall -Werror -fsanitize=address -std=c11 eigth.c -o eigth
+
+clean:
+	rm -f eigth
+
